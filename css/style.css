@@ -57,8 +57,8 @@ body, html {
     .arrow-container {
         display: block;
         position: absolute;
-        padding-top:23rem;
-        padding-left: 50%;
+        padding-top:22rem;
+        padding-left: 47%;
         margin: 0px auto;
         width: 1rem;
         animation: explore_bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
