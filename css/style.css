@@ -1,0 +1,392 @@
+body, html {
+    overflow-x: hidden;
+}
+
+@media (min-width: 400px){
+
+    .hero-content {
+        position: relative;
+        top:30%;
+        max-width:80%;
+        text-align: start;
+        margin:0 auto;
+    }
+    .name{
+        font-family: 'Roboto', 'sans-serif';
+        text-shadow: 2px 10px rgb(46, 46, 46);
+        font-weight: 600;
+        font-size: 3.5rem ;
+        text-align: center;
+    }
+    .quotes {
+        font-family: "Tangerine", sans-serif;
+        text-shadow: 2px 4px rgb(46, 46, 46);
+        font-weight: 400;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .weather {
+        font-family: 'Roboto', 'sans-serif';
+        max-width: 100%;
+        text-align: center;
+    }
+    .icon {
+      max-width: 75px;
+    }
+    .desc{
+        font-weight: 600;
+        font-size:.75rem;
+        text-shadow:1px 3px rgb(0, 0, 0);
+    }
+    .location{
+        font-weight: 600;
+        font-size:0.75rem;
+        text-shadow:1px 3px rgb(0, 0, 0);
+    }
+    .navbar-toggler1 {
+        color:rgb(204, 200, 200);
+        font-size: 2rem;
+        margin: 5% 5% 0 0;
+        background-color: transparent;
+        border: 1px solid rgb(75, 74, 74);
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+      }
+    .arrow-container {
+        display: block;
+        position: absolute;
+        padding-top:32rem;
+        padding-left: 50%;
+        margin: 0px auto;
+        width: 1rem;
+        animation: explore_bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        cursor: pointer;
+        height: 1rem; 
+    } 
+    .arrow-container a {
+        text-align:center;
+        font-size:.75rem;
+        color:white;
+        text-decoration: none;
+    }
+    .explore {
+        display: block;
+        height:50px;
+        width: 30px;
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    .explore a{
+          text-decoration: none;
+          color: white;
+    }
+    .explore a:hover {
+      cursor: pointer;
+      color: rgb(231, 231, 18);
+    }
+
+    @keyframes explore_bounce {
+      50% {
+          transform: translateY(-15px);
+        }
+    }
+    .about-img {
+      width:80%;
+      margin: 0 auto;
+    }  
+    .tech-icon {
+      width:50%;
+    }
+    .tech-stack {
+      background-color: rgb(233, 239, 241);
+    }
+
+
+    #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: #030307b6;
+      opacity: 0.9;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+      text-align: center;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #03030775;
+      opacity:0.9
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg, #mainNav.navbar-shrink .navbar-brand img {
+      height: 1.5rem;
+    }
+  
+    #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0.0625em;
+      }
+     /* Nav links effects */
+  .nav-link{
+    position: relative;
+    margin:0 auto;
+    width: 150px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+  
+  }
+  .nav-link::before,
+  .nav-link::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: lightblue;
+      position: absolute;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.8s;
+  }
+  .nav-link::after{
+      bottom: 0;
+      transform-origin: right;;
+  }
+  .nav-link::before{
+      top: 0;
+      transform-origin: left;;
+  }
+  .nav-link:hover::before,
+  .nav-link:hover::after{
+      transform: scaleX(1);
+  }
+    
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler1 {
+        display:none;
+      }
+    .hero-content {
+        top:20%;
+        text-align: center;
+    }
+    .name{
+        font-size: 5.5rem ;
+        text-align: start;
+    }
+    .quotes {
+        font-weight: 400;
+        font-size: 3.5rem;
+        padding-left: 15rem;
+        text-align: start;
+    }
+    .weather {
+        max-width: 550px;
+        padding-left: 15rem;
+    }
+    .icon {
+      max-width: 75px;
+    }
+    .desc{
+        text-shadow:1px 2px rgb(0, 0, 0);
+    }
+    .location{
+        text-shadow:1px 2px rgb(0, 0, 0);
+    }
+    .arrow-container {
+      padding-top: 30rem;
+    }
+    .tech-icon {
+      width:50%;
+    }
+    
+    #mainNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border: none;
+      background-color: transparent;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+    }
+    #mainNav .navbar-brand img {
+      height: 2rem;
+      transition: height 0.3s ease-in-out;
+    }
+    #mainNav.navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #030307cc;
+      opacity:0.9
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+    }
+    #mainNav.navbar-shrink .navbar-brand svg, #mainNav.navbar-shrink .navbar-brand img {
+      height: 1.5rem;
+    }
+  
+    #mainNav .navbar-nav .nav-item:last-child {
+      margin-right: 0;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-family: "Dosis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 0.0625em;
+      }
+}
+
+  header.masthead {
+    max-width:100%;
+    height:100vh;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,4), rgba(148,48,48,.2),rgba(167,67,67,.4)),
+    url("../assets/img/header-bg.jpg") center no-repeat;
+      background-size:cover;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.5rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+    font-family: "Tangerine", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    text-shadow: 2px 4px rgb(46, 46, 46);
+  }
+  
+  header.masthead .masthead-heading {
+    font-size: 3.25rem;
+    font-weight: 900;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+    text-shadow: 2px 10px rgb(46,46,46);
+  }
+  section#contact {
+    background-color: #212529;
+    color: white;
+    background-image: url("../assets/img/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  
+/*Meteor shower animation*/
+@-webkit-keyframes star-opacity {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+  }
+  @keyframes star-opacity {
+    0% {
+        opacity: 0
+    }
+    40% {
+        opacity: 1
+    }
+    60% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+  }
+  @-webkit-keyframes star-pos {
+    0% {
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0)
+    }
+    100% {
+        transform: scale(1) rotate(0) translate3d(-450px, 450px, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-450px, 450px, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-450px, 450px, 0)
+    }
+  }
+  @keyframes star-pos {
+    0% {
+        transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(0) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(0) rotate(0) translate3d(0, 0, 0)
+    }
+    100% {
+        transform: scale(1) rotate(0) translate3d(-450px, 450px, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-450px, 450px, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-450px, 450px, 0)
+    }
+  }
+  
+  .stars {
+    height: 0;
+    margin:0 auto;
+  }
+  .star {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    top: 100px;
+    left: 400px;
+    position: relative;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-animation: star-opacity 5s infinite ease-in, star-pos 5s infinite ease-in;
+    animation: star-opacity 15s infinite ease-in, star-pos 5s infinite ease-in;
+    -webkit-box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);
+    opacity: 0;
+    z-index: 2
+  }
+  
+  .star:after {
+    content: '';
+    display: block;
+    top: 0;
+    left: 4px;
+    border: 0 solid #fff;
+    border-width: 0 90px 2px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, .3);
+    -webkit-transform: rotate(-40deg) translate3d(1px, 3px, 0);
+    transform: rotate(-40deg) translate3d(1px, 3px, 0);
+    -webkit-box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%
+  }
+
+ 
