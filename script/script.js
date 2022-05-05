@@ -39,7 +39,7 @@ projectSections.forEach(projectSection=>{
 
 
 //Calling weather API and display data
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=82b4f0f4d84768ff85d0be9a4be2ee39",function(data){
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=Toronto&units=metric&appid=82b4f0f4d84768ff85d0be9a4be2ee39",function(data){
     var icon = data.weather[0].icon;
     if(icon == "01d"){
         $('.icon').attr('src', "WeatherIcons/sunny.png")
