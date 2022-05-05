@@ -18,12 +18,14 @@ body, html {
         font-size: 3.5rem ;
         text-align: center;
     }
-    .quotes {
+    .quoteSection {
         font-family: "Tangerine", sans-serif;
         text-shadow: 2px 4px rgb(46, 46, 46);
         font-weight: 400;
         font-size: 3rem;
         text-align: center;
+        max-width: 800px;
+        height:150px;
     }
     .weather {
         font-family: 'Roboto', 'sans-serif';
@@ -55,7 +57,7 @@ body, html {
     .arrow-container {
         display: block;
         position: absolute;
-        padding-top:28rem;
+        padding-top:23rem;
         padding-left: 50%;
         margin: 0px auto;
         width: 1rem;
@@ -193,11 +195,12 @@ body, html {
         font-size: 5.5rem ;
         text-align: start;
     }
-    .quotes {
+    .quoteSection {
+        height:135px;
         font-weight: 400;
         font-size: 3.5rem;
         padding-left: 15rem;
-        text-align: start;
+        text-align: center;
     }
     .weather {
         max-width: 550px;
@@ -213,8 +216,10 @@ body, html {
         text-shadow:1px 2px rgb(0, 0, 0);
     }
     .arrow-container {
-      padding-top: 30rem;
+      font-weight: 500;
+      padding-top: 28rem;
     }
+
     .tech-icon {
       width:50%;
     }
