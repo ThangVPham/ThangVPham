@@ -1,7 +1,4 @@
-
-
 let typewriterSection = document.querySelector('.typewriterSection');
-console.log(typewriterSection);
 
 let typewriter = new Typewriter(typewriterSection, {
     loop: false,

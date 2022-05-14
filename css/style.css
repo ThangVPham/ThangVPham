@@ -426,14 +426,15 @@ body, html {
 }
 }
 
-@media (min-width:1440px) {
+@media (min-width:1250px) {
   .name{
     font-size: 10rem ;
     text-align: start;
 }
   .weather {
+    padding:2rem;
     margin-top:1rem;
-    max-width:20%;
+    max-width:30%;
 
 }
 }
