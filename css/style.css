@@ -4,7 +4,9 @@ body, html {
 }
 
 @media (min-width: 320px){
-
+    .weather-info{
+      padding:1.5rem;
+    }
     .hero-content {
         position: relative;
         top:20%;
@@ -219,7 +221,7 @@ body, html {
     }
     .weather {
         max-width: 50%;
-        padding:3rem;
+        padding:2rem;
         text-align: center;
     }
     .icon {
