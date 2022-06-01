@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,10 +14,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
             rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/sassStyle.css">
     </head>
     <body>
         <!-- Navigation-->
@@ -50,23 +52,12 @@
                             <div class="star" style="top: 110px; left: 96%; animation-delay: 10s;"></div>
                         </div>
                         <div class="hero-content ">
-                            <h1 class="name animate__animated animate__fadeInDown">Thang Pham</h1>
-                            <h3 class="typewriterSection animate__animated animate__fadeIn"><q></q></h3>
-                            <div class="weather animate__animated animate__fadeInUp">
-                                <div class="weather-info">
-                                    <input class="form-control mr-sm-2 bg-transparent citySearch text-white" type="search" placeholder="Enter a City" aria-label="Search">
-                                    <img src="" class="icon m-0" alt="">
-                                    <p class="desc m-0"></p>
-                                    <p class="temperature m-0"></p>
-                                    <p class="location"></p>
-                                </div>
-                                <div>
-                                    <button  type="button" class="btn btn-primary me-1">View Projects</button>
-                                    <button type="button" class="btn btn-warning ms-1 text-light">Resume</button>
-                                </div>
-                                
+                            <div>
+                                <h1 class="name animate__animated animate__fadeInDown">Thang Pham</h1>
+                                <h3 class="typewriterSection animate__animated animate__fadeIn"><q></q></h3>
                             </div>
                         </div>
+                    
                         <div class="arrow-container text-center">
                             <div class= "explore animate__animated animate__fadeInUp">
                                 <a href="#aboutme">Explore Now</a>
@@ -76,98 +67,158 @@
             </header>
         
             <!-- About Me--> 
-            <section class="page-section m-4 mb-5" style="visibility:hidden" id="aboutme">
+            <section class="page-section aboutme m-4 mb-5" style="visibility:hidden" id="aboutme">
             <div class="container">
                 <div class="text-center">
                     <hr class="w-50 mx-auto">
                     <h2 class="section-heading text-uppercase" >About Me</h2>
                 </div>
-                <div class="row text-center ">
-                    <div class="col-md-7">
+                <div class="row text-center">
+                    <div class="col-md-6">
                         <img class="about-img" src="./assets/img/programmer.gif" alt="">
                     </div>
-                    <div class="col-md-5">               
-                        <h4 class="text-start">Hello there,</h4>
+                    <div class="col-md-6">               
+                       
                         <p class="text-muted text-start">
-                            My name is Thang and I am a software developer based in Toronto, Canada. I have <strong>3+ years</strong> of professional experience working in a highly technical field of industrial automation prior to transitioning into software engineering. The exposure to the software development for automated systems in my previous career led me to discover a new interest in programming, which gradually became a passion.
+                            Hi there,<br>My name is Thang and I am a software developer based in Toronto, Canada. I have <strong>3+ years</strong> of professional experience working in the field of industrial automation prior to transitioning into software engineering. The exposure to the software development for automated systems in my previous career led me to discover a new interest in programming, which gradually became a passion.
                         </p>
                         <p class="text-muted text-start">
-                            I enjoy working in team environment, and have taken on the leadership role for multiple successful team-based projects during my time in school. For this effort, I was honored to have been selected as a recipient of one of the <strong>Leadership Scholarships</strong> at Centennial College, awarded to student who has demonstrated leadership in their community or program.
+                            I enjoy creating web applications that are both useful and aesthetically pleasing. However, when I'm not coding or watching tech related materials, I enjoy playing guitar and jamming with other music enthusiasts. Feel free to check out my YouTube channel below for my music contents.
                         </p>
                         <p class="text-muted text-start">
-                            Currently my plan is to be able to contribute to the accessibility of the Web. My belief is that as the Information Revolution rapidly unfolds, and the Web becomes an essential part of our daily lives, we need to make an effort to be more inclusive by providing an easier way for people with certain disabilities to access the online contents with ease.
+                            If you are interested to know more about me, please don't hesitate to reach out. I am always open for new opportunities for collaboration.
                         </p>
-                        <p class="text-muted text-start">
-                            Please feel free to reach out if you would like to know more about me. I am always open for new opportunities for collaboration.
-                        </p>
+                        
                     </div>
                 </div>
             </div>
             </section>
             <!-- Tech Stack--> 
-        
             <section class="page-section bg-light mb-5" id="services" style="visibility:hidden">
-                    
                     <div class="container pt-3  ">
                         <div class="text-center">
                             <hr class="w-50 mx-auto">
-                            <h2 class="section-heading text-uppercase">Tech Stack</h2>
-                            
-                            <h3 class="section-subheading text-muted mb-5">Languages & Libraries</h3>
+                            <h2 class="section-heading text-uppercase">Tech Stack</h2>                     
+                            <h3 class="section-subheading text-muted mb-5">Languages, Libraries, & Databases</h3>
                         </div>
                         <div class="row text-center ">
-                            <div class="col-6 col-md-3">                          
+                            <div class="col-4 col-md-2">                          
                                 <img class="tech-icon" src="./assets/img/Js.png" alt="javascript-logo">                       
                                 <h4 class="my-3">Javascript</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/cs.png" alt="c#-logo">
                                 <h4 class="my-3">C#</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/java.png" alt="java-logo">
                                 <h4 class="my-3">Java</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/nodejs.png" alt="nodejs-logo">
                                 <h4 class="my-3">NodeJS</h4>                             
                             </div>
-                        </div>
-                        <div class="row text-center ">
-                            <div class="col-6 col-md-3">                          
+                            <div class="col-4 col-md-2">                          
                                 <img class="tech-icon" src="./assets/img/react.png" alt="react-logo">                       
                                 <h4 class="my-3">React</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/html5.png" alt="html5-logo">
                                 <h4 class=" my-3">HTML5</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2 empty"></div>
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/css3.png" alt="css3-logo">
                                 <h4 class="my-3">CSS3</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/bootstrap.png" alt="bootstrap-logo">
                                 <h4 class="my-3">Bootstrap</h4>                             
                             </div>
-                        </div>
-                        <div class="text-center my-5">
-                            <h3 class="section-subheading text-muted">Databases</h3>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-3 d-none d-md-block"></div>
-                            <div class="col-6 col-md-3">                          
+                            <div class="col-4 col-md-2">                          
                                 <img class="tech-icon" src="./assets/img/mongodb.png" alt="mongodb-logo">                       
-                                <h4 class="my-3">MongoDb</h4>                             
+                                <h4 class="my-3">Mongo</h4>                             
                             </div>
-                            <div class="col-6 col-md-3">
+                            <div class="col-4 col-md-2">
                                 <img class="tech-icon" src="./assets/img/oraclesql.png" alt="oraclesql-logo">
                                 <h4 class="my-3">Oracle SQL</h4>                             
                             </div>
-                            <div class="col-md-3 d-none d-md-block"></div>
-
                         </div>
+
+
                     </div>
+            </section>
+            <!-- Resume-->
+            <section class="page-section mb-5" id="resume" style="visibility:hidden">
+                <div class="container">
+                    <div class="text-center">
+                        <hr class="w-50 mx-auto">
+                        <h2 class="section-heading text-uppercase mb-4">Work Experience</h2>                
+                    </div>
+                    <ul class="timeline">
+                        <li class="timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/dpmech.png" alt="..." /></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5>2020-Present</h5>
+                                    <h5 class="subheading">DP Mech Solutions Ltd.</h5>
+                                    <h6>Toronto, ON</h6>
+                                    <h6>Electrical Technician</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="text-muted">
+                                        <li>Install, program, and configure smart control devices to establish communication with existing infrastructure.</li>
+                                        <li>Troubleshoot residential/commercial electrical systems to identify root cause and replace faulty components as needed.</li>
+                                        <li>Modify existing circuits by rerouting wires from service panels to accommodate newly installed electrical devices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/lincoln.png" alt="lincoln electric" /></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5>2018-2020</h5>
+                                    <h5 class="subheading">Lincoln Electric Holding, Inc.</h5>
+                                    <h6>Mississauga, ON</h6>
+                                    <h6>Electrical and Controls Technician</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="text-start text-muted">
+                                        <li>Planned and implemented automation processes leading to increase in machine operator’s productivity by 30 min/8h-shift</li>
+                                        <li>Collaborated in various projects that involved creating new programming logic for PLC microcontrollers as well as modifying existing capacitive touch-screen interfaces to accommodate newly added functionalities.</li>
+                                        <li>Designed and created user-friendly and intuitive controlling interface for capacitive touch screens (HMI) that allowed workers to carry out their tasks with ease. Tool used: Omron CX Designer.</li>
+                                        <li>Troubleshoot, repair, and monitor electrical equipment such as sensors, motors, and control systems for various machinery.</li>
+                                        <li>Resolve any technical issues related to electrical and controls system of equipment as well as general building maintenance to ensure smooth production and minimal downtime.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/computronic.png" alt="lincoln electric" /></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5>2018</h5>
+                                    <h5 class="subheading">Computronic Corp.</h5>
+                                    <h6>Toronto, ON</h6>
+                                    <h6>IT Specialist</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul class="text-start text-muted">
+                                        <li>Perform software diagnostic and hardware troubleshooting for computer logic boards.</li>
+                                        <li>Utilize electronic multi-meter to measure components' voltages, capacitance, and resistance to determine the root cause of the issue.</li>
+                                        <li>De-solder and replace faulty surface-mount components including resistors, capacitors, charging port and IC chips.</li>
+                                        <li>Assemble and configure computer servers based on specifications</li>
+                                        <li>Ensure cable harnesses and wiring connections are organized and accurate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    
+                </div>
             </section>
             <!-- Projects-->
             <section class="mb-5 " id="projects" style="visibility:hidden">
@@ -186,7 +237,7 @@
                                         <div class="portfolio-hover">
                                             <div class="portfolio-hover-content"></div>
                                         </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/cms.png" alt="..." />
+                                        <img class="img-fluid" src="assets/img/portfolio/cms.png" alt="Condo Management Solutions Image" />
                                     </a>
                                     <div class="portfolio-caption mt-3">
                                         <div class="portfolio-caption-heading"><h5>The Condo Management Solutions</h5></div>
@@ -194,6 +245,10 @@
                                         <div>
                                             <h6>Technologies:</h6>                                 
                                             <p class="portfolio-caption-subheading text-muted">NodeJS, Javascript, Express, Bootstrap, EJS Template Engine, MongoDb, Mongoose</p>
+                                        </div>
+                                        <div>
+                                            <a href="https://condomanagementsolutions.herokuapp.com/"   target="_blank"class="btn btn-outline-primary">Live Demo</a>
+                                            <a href="https://github.com/ThangVPham/buildingmanagement" target="_blank" class="btn btn-outline-dark">GitHub</a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,7 +261,7 @@
                                         <div class="portfolio-hover">
                                             <div class="portfolio-hover-content"></div>
                                         </div>
-                                        <img class="img-fluid" src="assets/img/portfolio/ecom.png" alt="..." />
+                                        <img class="img-fluid" src="assets/img/portfolio/ecom.png" alt="eCommerce Image"/>
                                     </a>
                                     <div class="portfolio-caption mt-3">
                                         <div class="portfolio-caption-heading"><h5>eCommerce</h5></div>
@@ -214,6 +269,10 @@
                                         <div>
                                             <h6>Technologies:</h6>                                 
                                             <p class="portfolio-caption-subheading text-muted">HTML5, CSS, Javascript</p>
+                                        </div>
+                                        <div>
+                                            <a href="https://thangvpham.github.io/eCommerce/"  target="_blank" class="btn btn-outline-primary">Live Demo</a>
+                                            <a href="https://github.com/ThangVPham/eCommerce" target="_blank" class="btn btn-outline-dark">GitHub</a>
                                         </div>
                                     </div>
                                     
@@ -237,6 +296,10 @@
                                         <h6>Technologies:</h6>                                 
                                         <p class="portfolio-caption-subheading text-muted">HTML5, CSS, Javascript</p>
                                     </div>
+                                    <div>
+                                        <a href="https://main--basalmetabolicratecalculator.netlify.app/"  target="_blank" class="btn btn-outline-primary">Live Demo</a>
+                                        <a href="https://github.com/ThangVPham/basalmetabolicrate"  target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                    </div>
                                 </div>
                             </div>
                         
@@ -257,6 +320,9 @@
                                         <h6>Technologies:</h6>                                 
                                         <p class="portfolio-caption-subheading text-muted">C#</p>
                                     </div>
+                                    <div>                     
+                                        <a href="button"  target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                    </div>
                                 </div>
                             </div>                                  
                         </div>
@@ -272,10 +338,10 @@
                         <div class="text-center pb-3"> 
                             <h5><i class="far fa-envelope"></i> thang.vi.pham@gmail.com</h5>
                             <div class="mx-auto col-lg-4 my-3 my-lg-0">
-                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-social mx-2 rounded-circle" href="#!" aria-label="Github"><i class="fab fa-github"></i></a>
-                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-danger btn-social mx-2 rounded-circle" href="#!" aria-label="LinkedIn"><i class="fab fa-youtube"></i></i></a>
+                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="https://twitter.com/ThangVPham" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-dark btn-social mx-2 rounded-circle" href="https://github.com/ThangVPham" aria-label="Github"><i class="fab fa-github"></i></a>
+                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="https://www.linkedin.com/in/thangvietpham/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-danger btn-social mx-2 rounded-circle" href="https://www.youtube.com/channel/UCWJ9dG_fmvum9ClC75TB_aA" aria-label="Youtube"><i class="fab fa-youtube"></i></i></a>
                             </div>
                         </div>
                     </div>

@@ -1,14 +1,20 @@
-//Calling weather API and display data
+const searchInput = document.querySelector('.citySearch');
+const description = document.querySelector('.desc');
+const temperature = document.querySelector('.temperature');
+const locat = document.querySelector('.location');
+
 getWeatherData()
+
 function getWeatherData(city){
     
     if(city==null){
         city='toronto'
     }
-    console.log(city)
+
+
     $.getJSON(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=82b4f0f4d84768ff85d0be9a4be2ee39`,function(data){
         var icon = data.weather[0].icon;
-        $('.icon').attr('src', `http://openweathermap.org/img/wn/${icon}@2x.png`);
+        $('.icon').attr('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
         
        
         var temp = data.main.temp;
@@ -31,10 +37,7 @@ function getWeatherData(city){
 }
 
 
-const searchInput = document.querySelector('.citySearch');
-const description = document.querySelector('.desc');
-const temperature = document.querySelector('.temperature');
-const locat = document.querySelector('.location');
+
 searchInput.addEventListener('keypress',(event)=>{
     if(event.key == "Enter"){
         if(searchInput.value==''){
