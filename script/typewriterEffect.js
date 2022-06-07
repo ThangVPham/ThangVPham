@@ -14,5 +14,5 @@ let typewriter = new Typewriter(typewriterSection, {
     .typeString("<strong><span style='color: #c58512;'>Problem Solver.</span></strong>")
     .pauseFor(1000)
     .deleteChars(15)
-    .typeString("<strong><span style='color: #c58512;'>Software Developer.</span></strong>")
+    .typeString("<strong><span style='color: #c58512;'>Web Developer.</span></strong>")
     .start();
