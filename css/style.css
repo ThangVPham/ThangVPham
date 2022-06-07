@@ -59,13 +59,14 @@ body, html {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: rgb(248, 99, 0);
 }
-.timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-  font-size: 10px;
+.timeline > li .timeline-image h6, .timeline > li .timeline-image .h6 {
+  font-size: 11px;
   line-height: 14px;
-  margin-top: 12px;
+  margin-top: 25px;
 }
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
@@ -368,10 +369,10 @@ body, html {
       height: 100px;
       margin-left: -50px;
     }
-    .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    .timeline > li .timeline-image h6, .timeline > li .timeline-image .h6 {
       font-size: 13px;
       line-height: 18px;
-      margin-top: 16px;
+      margin-top: 30px;
     }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
@@ -567,10 +568,10 @@ body, html {
   height: 150px;
   margin-left: -75px;
 }
-.timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-  font-size: 18px;
+.timeline > li .timeline-image h6, .timeline > li .timeline-image .h6 {
+  font-size: 14px;
   line-height: 26px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   padding: 0 20px 20px;
@@ -588,8 +589,10 @@ body, html {
   height: 170px;
   margin-left: -85px;
 }
-.timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
-  margin-top: 40px;
+.timeline > li .timeline-image h6, .timeline > li .timeline-image .h6{
+
+  font-size: 20px;
+  margin-top: 62px;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   padding: 0 100px 20px 20px;
