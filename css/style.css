@@ -1,6 +1,7 @@
 body, html {
   width:100%;
-    overflow-x: hidden;
+  overflow-x: hidden;
+   
 }
 .timeline {
   position: relative;
@@ -199,6 +200,7 @@ body, html {
           transform: translateY(-15px);
         }
     }
+
     .about-img {
       height:350px;
       margin: 0 auto;
