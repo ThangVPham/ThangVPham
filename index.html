@@ -1,353 +1,425 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Thang Pham</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/sassStyle.css">
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top animate__animated animate__fadeInDown" id="mainNav">
-                <div class="container justify-content-end justify-content-md-center me-xl-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars ms-1"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thang Pham</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sassStyle.css">
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top animate__animated animate__fadeInDown" id="mainNav">
+        <div class="container justify-content-end justify-content-md-center me-xl-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead mb-5" id="parallax">
+        <div class="stars">
+            <div class="star" style="top: 50px; left: 55%; animation-delay: 0s;"></div>
+            <div class="star" style="top: 40px; left: 60%; animation-delay: 3s;"></div>
+            <div class="star" style="top: 60px; left: 50%; animation-delay: 5s;"></div>
+            <div class="star" style="top: 80px; left: 66%; animation-delay: 8s;"></div>
+            <div class="star" style="top: 70px; left: 76%; animation-delay: 6s;"></div>
+            <div class="star" style="top: 90px; left: 88%; animation-delay: 3s;"></div>
+            <div class="star" style="top: 110px; left: 96%; animation-delay: 10s;"></div>
+        </div>
+        <div class="hero-content ">
+            <div>
+                <h1 class="name animate__animated animate__fadeInDown">Thang Pham</h1>
+                <h3 class="typewriterSection animate__animated animate__fadeIn"><q></q></h3>
+            </div>
+        </div>
+
+        <div class="arrow-container text-center">
+            <div class="explore animate__animated animate__fadeInUp">
+                <a href="#aboutme">Explore Now</a>
+                <a href="#aboutme"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me-->
+    <section class="page-section m-4 mb-5" style="visibility:hidden" id="aboutme">
+        <div class="container">
+            <div class="text-center">
+                <hr class="w-50 mx-auto">
+                <h2 class="section-heading text-uppercase">About Me</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img class="about-img" src="./assets/img/programmer.gif" alt="">
                 </div>
-        </nav>
-        
-            <!-- Header -->
-            <header class="masthead mb-5" id="parallax">
-                        <div class="stars">
-                            <div class="star" style="top: 50px; left: 55%; animation-delay: 0s;"></div>
-                            <div class="star" style="top: 40px; left: 60%; animation-delay: 3s;"></div>
-                            <div class="star" style="top: 60px; left: 50%; animation-delay: 5s;"></div>
-                            <div class="star" style="top: 80px; left: 66%; animation-delay: 8s;"></div>
-                            <div class="star" style="top: 70px; left: 76%; animation-delay: 6s;"></div>
-                            <div class="star" style="top: 90px; left: 88%; animation-delay: 3s;"></div>
-                            <div class="star" style="top: 110px; left: 96%; animation-delay: 10s;"></div>
+                <div class="col-md-6">
+
+                    <p class="text-muted text-start">
+                        Hi there,<br>My name is Thang and I am a web developer based in Toronto, Canada. I have
+                        <strong>3+ years</strong> of professional experience working in the field of industrial
+                        automation prior to transitioning into software engineering. The exposure to the software
+                        development for automated systems in my previous career led me to discover a new interest in
+                        programming, which gradually became a passion.
+                    </p>
+                    <p class="text-muted text-start">
+                        I enjoy creating web applications that are both useful and aesthetically pleasing. However, when
+                        I'm not coding or watching tech related materials, I enjoy playing guitar and jamming with other
+                        music enthusiasts. Feel free to check out my YouTube channel below for my music contents.
+                    </p>
+                    <p class="text-muted text-start">
+                        If you are interested to know more about me, please don't hesitate to reach out. I am always
+                        open for new opportunities for collaboration.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tech Stack-->
+    <section class="page-section  bg-light mb-5" id="services" style="visibility:hidden">
+        <div class="container pt-3  ">
+            <div class="text-center">
+                <hr class="w-50 mx-auto">
+                <h2 class="section-heading text-uppercase">Tech Stack</h2>
+                <h3 class="section-subheading text-muted mb-5">Languages, Libraries, & Databases</h3>
+            </div>
+            <div class="row text-center ">
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/Js.png" alt="javascript-logo">
+                    <h4 class="my-3">Javascript</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/cs.png" alt="c#-logo">
+                    <h4 class="my-3">C#</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/java.png" alt="java-logo">
+                    <h4 class="my-3">Java</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/nodejs.png" alt="nodejs-logo">
+                    <h4 class="my-3">NodeJS</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/react.png" alt="react-logo">
+                    <h4 class="my-3">React</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/html5.png" alt="html5-logo">
+                    <h4 class=" my-3">HTML5</h4>
+                </div>
+                <div class="col-4 col-md-2 empty"></div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/css3.png" alt="css3-logo">
+                    <h4 class="my-3">CSS3</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/bootstrap.png" alt="bootstrap-logo">
+                    <h4 class="my-3">Bootstrap</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/mongodb.png" alt="mongodb-logo">
+                    <h4 class="my-3">Mongo</h4>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img class="tech-icon" src="./assets/img/oraclesql.png" alt="oraclesql-logo">
+                    <h4 class="my-3">Oracle SQL</h4>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Resume-->
+    <section class="page-section mb-5  bg-light" id="resume" style="visibility:hidden">
+        <div class="container">
+            <div class="text-center pt-3">
+                <hr class=" w-50 mx-auto">
+                <h2 class="section-heading text-uppercase mb-4">Work Experience</h2>
+            </div>
+            <ul class="timeline">
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/dpmech.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h5>2020-Present</h5>
+                            <h5 class="subheading">DP Mech Solutions Ltd.</h5>
+                            <h6>Toronto, ON</h6>
+                            <h6>Electrical Technician</h6>
                         </div>
-                        <div class="hero-content ">
-                            <div>                       
-                                <h1 class="name animate__animated animate__fadeInDown">Thang Pham</h1>
-                                <h3 class="typewriterSection animate__animated animate__fadeIn"><q></q></h3>
+                        <div class="timeline-body">
+                            <ul class="text-start text-muted">
+                                <li>Primary responsibilities include communicating with clients to gather project
+                                    requirements.</li>
+                                <li>Establish, prioritize, and modify project goals and objectives during the on-going
+                                    commission phase based on clients' inputs and feedback.</li>
+                                <li>Install, configure, and program smart control devices to set up communication with
+                                    existing network infrastructure.</li>
+                                <li>Troubleshoot residential/commercial electrical systems to identify root cause and
+                                    replace faulty components as needed.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/lincoln.png"
+                            alt="lincoln electric" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h5>2018-2020</h5>
+                            <h5 class="subheading">Lincoln Electric Holding, Inc.</h5>
+                            <h6>Mississauga, ON</h6>
+                            <h6>Electrical and Controls Technician</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-body">
+                                <ul class="text-start text-muted">
+                                    <li>Worked collaboratively with other engineering team members to assess and improve
+                                        manufacturing processes.</li>
+                                    <li>Upgraded manually operated controls to Programmable Logic Controller to increase
+                                        line productivity.</li>
+                                    <li>Designed and created user-friendly touch-screen interface that allowed operators
+                                        to carry out their tasks with ease.</li>
+                                    <li>Troubleshooted and resolved any software/hardware, and electrical issue to
+                                        ensure smooth production and minimal downtime.</li>
+                                </ul>
                             </div>
                         </div>
-                    
-                        <div class="arrow-container text-center">
-                            <div class= "explore animate__animated animate__fadeInUp">
-                                <a href="#aboutme">Explore Now</a>
-                                <a href="#aboutme"><i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid"
+                            src="assets/img/about/computronic.png" alt="lincoln electric" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h5>2018</h5>
+                            <h5 class="subheading">Computronic Corp.</h5>
+                            <h6>Toronto, ON</h6>
+                            <h6>IT Specialist</h6>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="text-start text-muted">
+                                <li>Performed data recovery scan on damaged/defective hard-drives, SSD, and SD cards
+                                    using various software.</li>
+                                <li>Troubleshoot computer logic boards to determine root-cause and replace faulty
+                                    surface-mount components including resistors, capacitors, charging port and IC
+                                    chips.</li>
+                                <li>Assemble and configure computer servers based on specifications</li>
+                                <li>Ensure cable harnesses and wiring connections are organized and accurate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h6><a href="https://drive.google.com/file/d/1z5YwCjwnSoAgleaftPdosjTNxfwX8t_d/view?usp=sharing"
+                                target="_blank" style="color:white; text-decoration:none">Full Resume</a> </h6>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <!-- Projects-->
+    <section class="page-section mb-5 bg-light " id="projects" style="visibility:hidden">
+        <div class="container ">
+            <div class="text-center pt-3">
+                <hr class="w-50 mx-auto">
+                <h2 class="section-heading text-uppercase">Projects</h2>
+                <h3 class="section-subheading text-muted mb-5">Check Out Some of My Projects</h3>
+            </div>
+            <div class="row rounded-3">
+
+                <div class="col-sm-12 col-lg-6 project-section shadow" style="visibility:hidden">
+                    <!-- Project item 1-->
+                    <div class="portfolio-item p-5 ">
+                        <img class="img-fluid" src="assets/img/portfolio/cms.png"
+                            alt="Condo Management Solutions Image" />
+                        <div class="portfolio-caption mt-3">
+                            <div class="portfolio-caption-heading">
+                                <h5>The Condo Management Solutions</h5>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">
+                                <p>A condo managing system that allows residents to make reservation for different
+                                    on-site amenities and visitor parking, as well as submiting maintenance requests to
+                                    management office for various issues. Management users have the ability to see the
+                                    submitted requests, create/edit/delete work tickets and assign worker to different
+                                    tasks. Rental office staff also have the ability to create and edit information
+                                    pertaining to individual rental unit.</p>
+                            </div>
+                            <div>
+                                <h6>Technologies:</h6>
+                                <p class="portfolio-caption-subheading text-muted">NodeJS, Javascript, Express,
+                                    Bootstrap, EJS Template Engine, MongoDb, Mongoose</p>
+                            </div>
+                            <div>
+                                <a href="https://condomgtsolutions.herokuapp.com/" target="_blank"
+                                    class="btn btn-outline-primary">Live Demo</a>
+                                <a href="https://github.com/ThangVPham/condomanagementsolutions" target="_blank"
+                                    class="btn btn-outline-dark">GitHub</a>
                             </div>
                         </div>
-            </header>
-        
-            <!-- About Me--> 
-            <section class="page-section m-4 mb-5" style="visibility:hidden" id="aboutme">
-            <div class="container">
-                <div class="text-center">
-                    <hr class="w-50 mx-auto">
-                    <h2 class="section-heading text-uppercase" >About Me</h2>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <img class="about-img" src="./assets/img/programmer.gif" alt="">
                     </div>
-                    <div class="col-md-6">               
-                       
-                        <p class="text-muted text-start">
-                            Hi there,<br>My name is Thang and I am a web developer based in Toronto, Canada. I have <strong>3+ years</strong> of professional experience working in the field of industrial automation prior to transitioning into software engineering. The exposure to the software development for automated systems in my previous career led me to discover a new interest in programming, which gradually became a passion.
-                        </p>
-                        <p class="text-muted text-start">
-                            I enjoy creating web applications that are both useful and aesthetically pleasing. However, when I'm not coding or watching tech related materials, I enjoy playing guitar and jamming with other music enthusiasts. Feel free to check out my YouTube channel below for my music contents.
-                        </p>
-                        <p class="text-muted text-start">
-                            If you are interested to know more about me, please don't hesitate to reach out. I am always open for new opportunities for collaboration.
-                        </p>
-                        
+                </div>
+
+                <div class="col-sm-12 col-lg-6 project-section shadow" style="visibility:hidden">
+                    <!-- Project item 2-->
+                    <div class="portfolio-item p-5">
+                        <img class="img-fluid" src="assets/img/portfolio/banner.png" alt="eCommerce Image" />
+                        <div class="portfolio-caption mt-3">
+                            <div class="portfolio-caption-heading">
+                                <h5>WebWiz Tournament</h5>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">Inspired by Challonge. A web
+                                application that allows users to create and manage custom tournaments. User may create
+                                their own tournaments, selecting the number of competitors, add competitors, and choose
+                                which competitors to advance to the next bracket. Match result can be view at the end of
+                                the tournament.</div>
+                            <div>
+                                <h6>Technologies:</h6>
+                                <p class="portfolio-caption-subheading text-muted">React, MongoDb, Tailwind CSS, NodeJS
+                                </p>
+                            </div>
+                            <div>
+                                <a href="https://web-wiz.herokuapp.com/" target="_blank"
+                                    class="btn btn-outline-primary">Live Demo</a>
+                                <a href="https://github.com/ThangVPham/Webwiz" target="_blank"
+                                    class="btn btn-outline-dark">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 project-section shadow" style="visibility:hidden">
+                    <!-- Project item 3-->
+                    <div class="portfolio-item p-5">
+                        <img class="img-fluid" src="assets/img/portfolio/ecom.png" alt="eCommerce Image" />
+                        <div class="portfolio-caption mt-3">
+                            <div class="portfolio-caption-heading">
+                                <h5>eCommerce</h5>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">An static e-Commerce template created
+                                using vanilla Javascript, HTML5 and CSS. The site offers features such as carousel and
+                                modal viewing.</div>
+                            <div>
+                                <h6>Technologies:</h6>
+                                <p class="portfolio-caption-subheading text-muted">HTML5, CSS, Javascript</p>
+                            </div>
+                            <div>
+                                <a href="https://thangvpham.github.io/eCommerce/" target="_blank"
+                                    class="btn btn-outline-primary">Live Demo</a>
+                                <a href="https://github.com/ThangVPham/eCommerce" target="_blank"
+                                    class="btn btn-outline-dark">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 project-section shadow" style="visibility:hidden">
+                    <!-- Project item 4-->
+                    <div class="portfolio-item p-5">
+                        <img class="img-fluid" src="assets/img/portfolio/asl.png" alt="..." />
+                        <div class="portfolio-caption mt-3">
+                            <div class="portfolio-caption-heading">
+                                <h5>ASL Studies Survey (WIP)</h5>
+                            </div>
+                            <div class="portfolio-caption-subheading text-muted">A survey web application that was built
+                                for the purpose of collecting data for an ASL undergraduate thesis research. The
+                                client's requirements were to collect user's personal information such as name and
+                                email, users' responses to survey questions, as well as how much time the user spend on
+                                each question.</div>
+                        </div>
+                        <div>
+                            <h6>Technologies:</h6>
+                            <p class="portfolio-caption-subheading text-muted">React, NodeJS, Bootstrap, MongoDB</p>
+                        </div>
+                        <div>
+
+                            <a href="https://github.com/ThangVPham/researchSurvey-client" target="_blank"
+                                class="btn btn-outline-dark">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            </section>
-            <!-- Tech Stack--> 
-            <section class="page-section  bg-light mb-5" id="services" style="visibility:hidden">
-                    <div class="container pt-3  ">
-                        <div class="text-center">
-                            <hr class="w-50 mx-auto">
-                            <h2 class="section-heading text-uppercase">Tech Stack</h2>                     
-                            <h3 class="section-subheading text-muted mb-5">Languages, Libraries, & Databases</h3>
-                        </div>
-                        <div class="row text-center ">
-                            <div class="col-4 col-md-2">                          
-                                <img class="tech-icon" src="./assets/img/Js.png" alt="javascript-logo">                       
-                                <h4 class="my-3">Javascript</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/cs.png" alt="c#-logo">
-                                <h4 class="my-3">C#</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/java.png" alt="java-logo">
-                                <h4 class="my-3">Java</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/nodejs.png" alt="nodejs-logo">
-                                <h4 class="my-3">NodeJS</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">                          
-                                <img class="tech-icon" src="./assets/img/react.png" alt="react-logo">                       
-                                <h4 class="my-3">React</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/html5.png" alt="html5-logo">
-                                <h4 class=" my-3">HTML5</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2 empty"></div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/css3.png" alt="css3-logo">
-                                <h4 class="my-3">CSS3</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/bootstrap.png" alt="bootstrap-logo">
-                                <h4 class="my-3">Bootstrap</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">                          
-                                <img class="tech-icon" src="./assets/img/mongodb.png" alt="mongodb-logo">                       
-                                <h4 class="my-3">Mongo</h4>                             
-                            </div>
-                            <div class="col-4 col-md-2">
-                                <img class="tech-icon" src="./assets/img/oraclesql.png" alt="oraclesql-logo">
-                                <h4 class="my-3">Oracle SQL</h4>                             
-                            </div>
-                        </div>
-
-
-                    </div>
-            </section>
-            <!-- Resume-->
-            <section class="page-section mb-5  bg-light" id="resume" style="visibility:hidden">
-                <div class="container">
-                    <div class="text-center pt-3">
-                        <hr class=" w-50 mx-auto">
-                        <h2 class="section-heading text-uppercase mb-4">Work Experience</h2>                
-                    </div>
-                    <ul class="timeline">
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/dpmech.png" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h5>2020-Present</h5>
-                                    <h5 class="subheading">DP Mech Solutions Ltd.</h5>
-                                    <h6>Toronto, ON</h6>
-                                    <h6>Electrical Technician</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <ul class="text-start text-muted">
-                                        <li>Primary responsibilities include communicating with clients to gather project requirements.</li>
-                                        <li>Establish, prioritize, and modify project goals and objectives during the on-going commission phase based on clients' inputs and feedback.</li>
-                                        <li>Install, configure, and program smart control devices to set up communication with existing network infrastructure.</li>
-                                        <li>Troubleshoot residential/commercial electrical systems to identify root cause and replace faulty components as needed.</li>                                       
-                                    </ul>                                
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/lincoln.png" alt="lincoln electric" /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h5>2018-2020</h5>
-                                    <h5 class="subheading">Lincoln Electric Holding, Inc.</h5>
-                                    <h6>Mississauga, ON</h6>
-                                    <h6>Electrical and Controls Technician</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <div class="timeline-body">
-                                        <ul class="text-start text-muted">
-                                            <li>Worked collaboratively with other engineering team members to assess and improve manufacturing processes.</li>
-                                            <li>Upgraded manually operated controls to Programmable Logic Controller to increase line productivity.</li>
-                                            <li>Designed and created user-friendly touch-screen interface that allowed operators to carry out their tasks with ease.</li>
-                                            <li>Troubleshooted and resolved any software/hardware, and electrical issue to ensure smooth production and minimal downtime.</li>                                       
-                                        </ul>                                
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/computronic.png" alt="lincoln electric" /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h5>2018</h5>
-                                    <h5 class="subheading">Computronic Corp.</h5>
-                                    <h6>Toronto, ON</h6>
-                                    <h6>IT Specialist</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <ul class="text-start text-muted">
-                                        <li>Performed data recovery scan on damaged/defective hard-drives, SSD, and SD cards using various software.</li>
-                                        <li>Troubleshoot computer logic boards to determine root-cause and replace faulty surface-mount components including resistors, capacitors, charging port and IC chips.</li>
-                                        <li>Assemble and configure computer servers based on specifications</li>
-                                        <li>Ensure cable harnesses and wiring connections are organized and accurate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"> 
-                                <h6><a href="https://drive.google.com/file/d/1z5YwCjwnSoAgleaftPdosjTNxfwX8t_d/view?usp=sharing" target="_blank" style="color:white; text-decoration:none">Full Resume</a> </h6> 
-                             </div>                                              
-                        </li>
-                    </ul>
-                    
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact" style="visibility:hidden">
+        <div class="container">
+            <div class="text-center py-2">
+                <h2 class="section-heading text-uppercase">Contact Information</h2>
+                <h4 class="section-subheading ">Let's get in touch.</h4>
+            </div>
+            <div class="text-center pb-3">
+                <h5><i class="far fa-envelope"></i> thang.vi.pham@gmail.com</h5>
+                <div class="mx-auto col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-primary btn-social mx-2 rounded-circle" href="https://twitter.com/ThangVPham"
+                        aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2 rounded-circle" href="https://github.com/ThangVPham"
+                        aria-label="Github"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary btn-social mx-2 rounded-circle"
+                        href="https://www.linkedin.com/in/thangvietpham/" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-danger btn-social mx-2 rounded-circle"
+                        href="https://www.youtube.com/channel/UCWJ9dG_fmvum9ClC75TB_aA" aria-label="Youtube"><i
+                            class="fab fa-youtube"></i></i></a>
                 </div>
-            </section>
-            <!-- Projects-->
-            <section class="page-section mb-5 bg-light " id="projects" style="visibility:hidden">
-                    <div class="container ">
-                        <div class="text-center pt-3">
-                            <hr class="w-50 mx-auto">
-                            <h2 class="section-heading text-uppercase">Projects</h2>
-                            <h3 class="section-subheading text-muted mb-5">Check Out Some of My Projects</h3>
-                        </div>
-                        <div class="row rounded-3">
-                          
-                            <div class="col-sm-12 col-lg-6 project-section shadow"  style="visibility:hidden">
-                                <!-- Project item 1-->
-                                <div class="portfolio-item p-5 ">                                                                
-                                        <img class="img-fluid" src="assets/img/portfolio/cms.png" alt="Condo Management Solutions Image" />                                
-                                    <div class="portfolio-caption mt-3">
-                                        <div class="portfolio-caption-heading"><h5>The Condo Management Solutions</h5></div>
-                                        <div class="portfolio-caption-subheading text-muted"><p>A condo managing system that allows residents to make reservation for different on-site amenities and visitor parking, as well as submiting maintenance requests to management office for various issues. Management users have the ability to see the submitted requests, create/edit/delete work tickets and assign worker to different tasks. Rental office staff also have the ability to create and edit information pertaining to individual rental unit.</p></div>
-                                        <div>
-                                            <h6>Technologies:</h6>                                 
-                                            <p class="portfolio-caption-subheading text-muted">NodeJS, Javascript, Express, Bootstrap, EJS Template Engine, MongoDb, Mongoose</p>
-                                        </div>
-                                        <div>
-                                            <a href="https://condomgtsolutions.herokuapp.com/"   target="_blank"class="btn btn-outline-primary">Live Demo</a>
-                                            <a href="https://github.com/ThangVPham/condomanagementsolutions" target="_blank" class="btn btn-outline-dark">GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            </div>
+        </div>
+        <div class="container w-100 mx-auto text-center">
+            <div class="bg-dark">
+                <span style="font-size:small">Copyright &copy; 2022. Thang Pham. All rights reserved.</span>
+            </div>
+        </div>
+    </section>
 
-                            <div class="col-sm-12 col-lg-6 project-section shadow"  style="visibility:hidden">
-                                <!-- Project item 2-->
-                                <div class="portfolio-item p-5">                                 
-                                        <img class="img-fluid" src="assets/img/portfolio/banner.png" alt="eCommerce Image"/>                               
-                                    <div class="portfolio-caption mt-3">
-                                        <div class="portfolio-caption-heading"><h5>WebWiz Tournament</h5></div>
-                                        <div class="portfolio-caption-subheading text-muted">Inspired by Challonge. A web application that allows users to create and manage custom tournaments. User may create their own tournaments, selecting the number of competitors, add competitors, and choose which competitors to advance to the next bracket. Match result can be view at the end of the tournament.</div>
-                                        <div>
-                                            <h6>Technologies:</h6>                                 
-                                            <p class="portfolio-caption-subheading text-muted">React, MongoDb, Tailwind CSS, NodeJS</p>
-                                        </div>
-                                        <div>
-                                            <a href="https://web-wiz.herokuapp.com/"  target="_blank" class="btn btn-outline-primary">Live Demo</a>
-                                            <a href="https://github.com/ThangVPham/Webwiz" target="_blank" class="btn btn-outline-dark">GitHub</a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                          
-                            <div class="col-sm-12 col-lg-6 project-section shadow"  style="visibility:hidden">
-                                <!-- Project item 3-->
-                                <div class="portfolio-item p-5">                                 
-                                        <img class="img-fluid" src="assets/img/portfolio/ecom.png" alt="eCommerce Image"/>                               
-                                    <div class="portfolio-caption mt-3">
-                                        <div class="portfolio-caption-heading"><h5>eCommerce</h5></div>
-                                        <div class="portfolio-caption-subheading text-muted">An static e-Commerce template created using vanilla Javascript, HTML5 and CSS. The site offers features such as carousel and modal viewing.</div>
-                                        <div>
-                                            <h6>Technologies:</h6>                                 
-                                            <p class="portfolio-caption-subheading text-muted">HTML5, CSS, Javascript</p>
-                                        </div>
-                                        <div>
-                                            <a href="https://thangvpham.github.io/eCommerce/"  target="_blank" class="btn btn-outline-primary">Live Demo</a>
-                                            <a href="https://github.com/ThangVPham/eCommerce" target="_blank" class="btn btn-outline-dark">GitHub</a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-12 col-lg-6 project-section shadow" style="visibility:hidden">
-                                <!-- Project item 4-->
-                                <div class="portfolio-item p-5"  >                                                              
-                                        <img class="img-fluid" src="assets/img/portfolio/asl.png" alt="..." />
-                                    <div class="portfolio-caption mt-3">
-                                        <div class="portfolio-caption-heading"><h5>ASL Studies Survey (WIP)</h5></div>
-                                        <div class="portfolio-caption-subheading text-muted">A survey web application that was built for the purpose of collecting data for an ASL undergraduate thesis research. The client's requirements were to collect user's personal information such as name and email, users' responses to survey questions, as well as how much time the user spend on each question.</div>
-                                    </div>
-                                    <div>
-                                        <h6>Technologies:</h6>                                 
-                                        <p class="portfolio-caption-subheading text-muted">React, NodeJS, Bootstrap, MongoDB</p>
-                                    </div>
-                                    <div>
-                                        
-                                        <a href="https://github.com/ThangVPham/researchSurvey-client"  target="_blank" class="btn btn-outline-dark">GitHub</a>
-                                    </div>
-                                </div>
-                            </div>                                 
-                        </div>
-                    </div>
-            </section>
-            <!-- Contact-->
-            <section class="page-section" id="contact" style="visibility:hidden">
-                    <div class="container">
-                        <div class="text-center py-2">
-                            <h2 class="section-heading text-uppercase">Contact Information</h2>
-                            <h4 class="section-subheading ">Let's get in touch.</h4>
-                        </div>
-                        <div class="text-center pb-3"> 
-                            <h5><i class="far fa-envelope"></i> thang.vi.pham@gmail.com</h5>
-                            <div class="mx-auto col-lg-4 my-3 my-lg-0">
-                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="https://twitter.com/ThangVPham" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-dark btn-social mx-2 rounded-circle" href="https://github.com/ThangVPham" aria-label="Github"><i class="fab fa-github"></i></a>
-                                <a class="btn btn-primary btn-social mx-2 rounded-circle" href="https://www.linkedin.com/in/thangvietpham/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-danger btn-social mx-2 rounded-circle" href="https://www.youtube.com/channel/UCWJ9dG_fmvum9ClC75TB_aA" aria-label="Youtube"><i class="fab fa-youtube"></i></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container w-100 mx-auto text-center">
-                        <div class="bg-dark">
-                            <span style="font-size:small">Copyright &copy; 2022. Thang Pham. All rights reserved.</span>
-                        </div>
-                    </div>
-            </section>
-        
-        
 
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="module" src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="./script/mobileMenuBtn.js"></script>
-        <script src="./script/fadingAnimation.js"></script>
-        <script type="module" src="./script/typewriterEffect.js"></script>
-        <script src="./script/parallax.js"></script>
-    </body>
+
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./script/mobileMenuBtn.js"></script>
+    <script src="./script/fadingAnimation.js"></script>
+    <script type="module" src="./script/typewriterEffect.js"></script>
+    <script src="./script/parallax.js"></script>
+</body>
+
 </html>
