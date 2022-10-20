@@ -100,6 +100,22 @@ body, html {
   margin-bottom: 0;
 }
 
+.p-item{
+  overflow: hidden;
+}
+
+.p-item img{
+  transition-property: all;
+  transition-duration: 700ms;
+  
+}
+
+.p-item img:hover{
+  opacity: 0.5s;
+  
+  transform:scale(1.05);
+}
+
 @media (min-width: 320px){
     .weather-info{
       padding:1.5rem;
