@@ -19,6 +19,6 @@ typewriter
   .pauseFor(1000)
   .deleteChars(15)
   .typeString(
-    "<strong><span style='color: #c58512;'>Web Developer.</span></strong>"
+    "<strong><span style='color: #c58512;'>Software Developer.</span></strong>"
   )
   .start();
