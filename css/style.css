@@ -522,6 +522,13 @@ header.masthead {
   background-size: cover;
 }
 
+@media only screen and (max-width: 430px) {
+  header.masthead {
+    background: linear-gradient(rgba(0, 0, 0, 4), rgba(148, 48, 48, .2), rgba(167, 67, 67, .4)),
+      url("../assets/img/header-bg-mb.jpg") center no-repeat;
+  }
+}
+
 header.masthead .masthead-subheading {
   font-size: 2.5rem;
   font-style: italic;
