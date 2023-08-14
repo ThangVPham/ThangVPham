@@ -526,7 +526,9 @@ header.masthead {
   header.masthead {
     background: linear-gradient(rgba(0, 0, 0, 4), rgba(148, 48, 48, .2), rgba(167, 67, 67, .4)),
       url("../assets/img/header-bg-mb.jpg") center no-repeat;
+    background-size: cover;
   }
+
 }
 
 header.masthead .masthead-subheading {
